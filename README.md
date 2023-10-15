@@ -1,2 +1,1 @@
-# Solidity-Gas-Optimization
-Gas Optimization tips for Solidity contracts!
+# Gas Optimization for Solidity contracts
