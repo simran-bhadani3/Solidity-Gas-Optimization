@@ -1,1 +1,1 @@
-# Gas Optimization for Solidity contracts
+# Gas optimization for Solidity contracts
