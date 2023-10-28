@@ -1,5 +1,14 @@
 # Gas optimization for Solidity contracts
 
+Gas: unit of measurement for the amount of computational effort required to carry out specific operations on the Ethereum network
+
+When a smart contract is compiled in Solidity it is converted into a series of operation codes (opcodes).
+Each opcode is assigned a predefined amount of gas which represents the computing work necessary to carry out that operation.
+
+Bytecodes provide the hexadecimal version of opcodes and are executed on the EVM.
+
+Optimization aims to reduce the overall number of operations needed to run a smart contract.
+
 ## Cheaper operations
 - Reading constants and immutable variables
 - Reading and writing local variables
@@ -11,6 +20,9 @@
 - Reading and writing state variables stored in contract storage
 - External function calls
 - Loops
+
+## Use mappings instead of arrays
+
 
 ## Optimizing state reads and writes in loops
 - Replace state variable reads and writes in loops with local variable reads and writes
@@ -75,7 +87,7 @@ struct MyStruct {
 ## Reducing multi-contract gas costs
 
 
-# ReferencesR
-[EIP-2535 Diamonds Substack: Basics of Smart Contract Gas Optimization with Solidity (2022)](https://eip2535diamonds.substack.com/p/smart-contract-gas-optimization-with)
-[EIP-2535 Diamons Substack: How EIP2535 Diamonds Reduces Gas Costs for Smart Contract Systems]
-(https://eip2535diamonds.substack.com/p/how-eip2535-diamonds-reduces-gas)
+# References
+- [Alchemy: 10 Expert Solidity Gas Optimization Techniques (2022)](https://www.alchemy.com/overviews/solidity-gas-optimization)
+- [EIP-2535 Diamonds Substack: Basics of Smart Contract Gas Optimization with Solidity (2022)](https://eip2535diamonds.substack.com/p/smart-contract-gas-optimization-with)
+- [EIP-2535 Diamons Substack: How EIP2535 Diamonds Reduces Gas Costs for Smart Contract Systems (2022)](https://eip2535diamonds.substack.com/p/how-eip2535-diamonds-reduces-gas) (TBR)
